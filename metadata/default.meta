@@ -1,0 +1,52 @@
+######################################################
+#
+# Cisco ACS/ISE Technology Add-On
+#
+#
+# Copyright (C) 2013 Mikael Bjerkeland
+# All Rights Reserved
+#
+######################################################
+
+[]
+access = read : [ * ], write : [ admin, power ]
+export = system
+#export = none
+
+[eventtypes]
+export = system
+#export = none
+
+
+[props]
+export = system
+#export = none
+
+
+[transforms]
+export = system
+#export = none
+
+
+[macros]
+export = system
+#export = none
+
+
+[tags]
+export = system
+
+[viewstates]
+access = read : [ * ], write : [ * ]
+export = system
+#export = none
+
+[lookups]
+export = system
+
+[views]
+export = none
+
+[savedsearches]
+access = read : [ * ]
+export = none
