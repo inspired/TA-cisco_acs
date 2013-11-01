@@ -16,3 +16,17 @@ export = none
 owner = admin
 version = 6.0
 modtime = 1383296036.331864000
+
+[datamodels/ACS]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.0
+modtime = 1383317060.818988000
+
+[models/ACS]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.0
+modtime = 1383317060.826706000

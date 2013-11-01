@@ -1,0 +1,803 @@
+{
+    "objectSummary": {
+        "Transaction-Based": 1, 
+        "Search-Based": 0, 
+        "Event-Based": 6, 
+        "Interface Implementations": 0, 
+        "Interfaces": 0
+    }, 
+    "displayName": "ACS", 
+    "objectNameList": [
+        "ACS", 
+        "Servers", 
+        "Authentications", 
+        "Failed_Authentications", 
+        "Failed_Authentications_TX", 
+        "Users", 
+        "Wireless_Authentications"
+    ], 
+    "modelName": "ACS", 
+    "objects": [
+        {
+            "parentName": "BaseEvent", 
+            "displayName": "ACS", 
+            "objectName": "ACS", 
+            "constraints": [
+                {
+                    "search": "sourcetype=\"Cisco:ACS:Syslog\""
+                }
+            ], 
+            "calculations": [], 
+            "fields": [
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Authentic", 
+                    "fieldName": "Acct_Authentic", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Delay_Time", 
+                    "fieldName": "Acct_Delay_Time", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Input_Octets", 
+                    "fieldName": "Acct_Input_Octets", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Input_Packets", 
+                    "fieldName": "Acct_Input_Packets", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Output_Octets", 
+                    "fieldName": "Acct_Output_Octets", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Output_Packets", 
+                    "fieldName": "Acct_Output_Packets", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Session_Id", 
+                    "fieldName": "Acct_Session_Id", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Session_Time", 
+                    "fieldName": "Acct_Session_Time", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Status_Type", 
+                    "fieldName": "Acct_Status_Type", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Acct_Terminate_Cause", 
+                    "fieldName": "Acct_Terminate_Cause", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "AcsSessionID", 
+                    "fieldName": "AcsSessionID", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "ACSVersion", 
+                    "fieldName": "ACSVersion", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "ADDomain", 
+                    "fieldName": "ADDomain", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Address", 
+                    "fieldName": "Address", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Airespace_Wlan_Id", 
+                    "fieldName": "Airespace_Wlan_Id", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "AuditSessionId", 
+                    "fieldName": "AuditSessionId", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "AuthenticationIdentityStore", 
+                    "fieldName": "AuthenticationIdentityStore", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "AuthorizationPolicyMatchedRule", 
+                    "fieldName": "AuthorizationPolicyMatchedRule", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Called_Station_ID", 
+                    "fieldName": "Called_Station_ID", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Calling_Station_ID", 
+                    "fieldName": "Calling_Station_ID", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "cat_name", 
+                    "fieldName": "cat_name", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "cisco_av_pair", 
+                    "fieldName": "cisco_av_pair", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Class", 
+                    "fieldName": "Class", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "ConfigVersionId", 
+                    "fieldName": "ConfigVersionId", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "EapAuthentication", 
+                    "fieldName": "EapAuthentication", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "EapTunnel", 
+                    "fieldName": "EapTunnel", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "ExternalGroups", 
+                    "fieldName": "ExternalGroups", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Framed_IP_Address", 
+                    "fieldName": "Framed_IP_Address", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Framed_MTU", 
+                    "fieldName": "Framed_MTU", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "GroupMappingPolicyMatchedRule", 
+                    "fieldName": "GroupMappingPolicyMatchedRule", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "IdentityAccessRestricted", 
+                    "fieldName": "IdentityAccessRestricted", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "IdentityPolicyMatchedRule", 
+                    "fieldName": "IdentityPolicyMatchedRule", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "msg_id", 
+                    "fieldName": "msg_id", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "NAS_Identifier", 
+                    "fieldName": "NAS_Identifier", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "NAS_IP_Address", 
+                    "fieldName": "NAS_IP_Address", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "NAS_Port", 
+                    "fieldName": "NAS_Port", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "NAS_Port_Type", 
+                    "fieldName": "NAS_Port_Type", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "NetworkDeviceGroups", 
+                    "fieldName": "NetworkDeviceGroups", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "NetworkDeviceName", 
+                    "fieldName": "NetworkDeviceName", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "originating_acs", 
+                    "fieldName": "originating_acs", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Port", 
+                    "fieldName": "Port", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Protocol", 
+                    "fieldName": "Protocol", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "RequestLatency", 
+                    "fieldName": "RequestLatency", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Response", 
+                    "fieldName": "Response", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "seg_num", 
+                    "fieldName": "seg_num", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "SelectedAccessService",
+                    "fieldName": "SelectedAccessService", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "SelectedAuthenticationIdentityStores", 
+                    "fieldName": "SelectedAuthenticationIdentityStores", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "SelectedAuthorizationProfiles", 
+                    "fieldName": "SelectedAuthorizationProfiles", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Service_Type", 
+                    "fieldName": "Service_Type", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "ServiceSelectionMatchedRule", 
+                    "fieldName": "ServiceSelectionMatchedRule", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "src_ip", 
+                    "fieldName": "src_ip", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "State", 
+                    "fieldName": "State", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Step", 
+                    "fieldName": "Step", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "total_seg", 
+                    "fieldName": "total_seg", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Tunnel_Medium_Type", 
+                    "fieldName": "Tunnel_Medium_Type", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Tunnel_Private_Group_ID", 
+                    "fieldName": "Tunnel_Private_Group_ID", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Tunnel_Type", 
+                    "fieldName": "Tunnel_Type", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "Type", 
+                    "fieldName": "Type", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "User_Name", 
+                    "fieldName": "User_Name", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "UserName", 
+                    "fieldName": "UserName", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": false, 
+                    "hidden": false, 
+                    "displayName": "user", 
+                    "fieldName": "user", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }
+            ], 
+            "comment": ""
+        }, 
+        {
+            "parentName": "ACS", 
+            "displayName": "Servers", 
+            "objectName": "Servers", 
+            "constraints": [
+                {
+                    "search": "originating_acs=* ACSVersion=*"
+                }
+            ], 
+            "calculations": [], 
+            "fields": [
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "src_ip", 
+                    "fieldName": "src_ip", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "ACSVersion", 
+                    "fieldName": "ACSVersion", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }
+            ], 
+            "comment": ""
+        }, 
+        {
+            "parentName": "ACS", 
+            "displayName": "Authentications", 
+            "objectName": "Authentications", 
+            "constraints": [
+                {
+                    "search": "cat_name=\"Passed_Authentications\" OR cat_name=\"Failed_Attempts\" OR cat_name=RADIUS_Diagnostics"
+                }
+            ], 
+            "calculations": [], 
+            "fields": [
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "src_ip", 
+                    "fieldName": "src_ip", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }
+            ], 
+            "comment": ""
+        }, 
+        {
+            "parentName": "Authentications", 
+            "displayName": "Failed Authentications", 
+            "objectName": "Failed_Authentications", 
+            "constraints": [
+                {
+                    "search": "cat_name=Failed_Attempts"
+                }
+            ], 
+            "calculations": [], 
+            "fields": [
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "src_ip", 
+                    "fieldName": "src_ip", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }
+            ], 
+            "comment": ""
+        }, 
+        {
+            "transactionMaxTimeSpan": "", 
+            "displayName": "Failed Authentications transactions", 
+            "fields": [], 
+            "parentName": "BaseTransaction", 
+            "comment": "", 
+            "transactionMaxPause": "", 
+            "objectName": "Failed_Authentications_TX", 
+            "groupByFields": [
+                "msg_id"
+            ], 
+            "constraints": [], 
+            "calculations": [], 
+            "objectsToGroup": [
+                "Failed_Authentications"
+            ]
+        }, 
+        {
+            "parentName": "ACS", 
+            "displayName": "Users", 
+            "objectName": "Users", 
+            "constraints": [
+                {
+                    "search": "user=*"
+                }
+            ], 
+            "calculations": [], 
+            "fields": [
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "src_ip", 
+                    "fieldName": "src_ip", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "user", 
+                    "fieldName": "user", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }
+            ], 
+            "comment": ""
+        }, 
+        {
+            "parentName": "Authentications", 
+            "displayName": "Wireless Authentications", 
+            "objectName": "Wireless_Authentications", 
+            "constraints": [
+                {
+                    "search": "NAS_Port_Type=\"Wireless - IEEE 802.11\""
+                }
+            ], 
+            "calculations": [], 
+            "fields": [
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "AcsSessionID", 
+                    "fieldName": "AcsSessionID", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "Called_Station_ID", 
+                    "fieldName": "Called_Station_ID", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "Calling_Station_ID", 
+                    "fieldName": "Calling_Station_ID", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "NAS_Identifier", 
+                    "fieldName": "NAS_Identifier", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "NAS_IP_Address", 
+                    "fieldName": "NAS_IP_Address", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "user", 
+                    "fieldName": "user", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }, 
+                {
+                    "required": true, 
+                    "hidden": false, 
+                    "displayName": "src_ip", 
+                    "fieldName": "src_ip", 
+                    "owner": "ACS", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "comment": ""
+                }
+            ], 
+            "comment": ""
+        }
+    ], 
+    "description": "ACS/ISE Event"
+}
